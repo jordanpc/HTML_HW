@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Project</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <div class="navbar">
+
+        <a class="nav-link" href="index.html">Home</a>
+
+        <a class="nav-link" href="comparisons.html">Comparisons</a>
+
+        <a class="nav-link" href="data.html">Data</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Plots &#x25BC;
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mvp_wins.html">MVP Wins</a>
+                <a href="mvp_height.html">MVP Height</a>
+                <a href="mvp_stats.html">MVP Stats</a>
+                <a href="mvp_3pt.html">MVP 3-PT%</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="summaryPageContainer" class="media">
+                    <img class="align-self-center mr-3" src="assets/mvp_3.png" width="750px" height="500px" alt="Main Page Placeholder Image">
+                    <div class="media-body">
+                        <h3 class="mt-0">MVP 3-Point % by Year</h3>
+                        <p>
+                            The 3-Point line was introduced to the NBA for the 1979 season. Thus, there is no data available for the MVP winners prior to the 1979 season.
+                        </p>
+                        <p>
+                            The line graph above shows large fluctuations in player 3-Point % until around 2004. 14 of the last MVP winners (2004-2018) have shot 32% or better from 3-Point. Of those 14, 6 have shot better than 40% from 3-Point.
+                        </p>
+                        <p>
+                            The increase in higher 3-Point % and consistency of year-over-year rates could be explained by multiple factors: focus on 3-Point shooting as the shots are worth more, faster style of player and perimeter offense, more offensive spacing which creates more open shot attempts. Again, additional data anlysis would need to take place to come to a definitive conclusion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_wins.html">
+                                <img width="250px" height="150px" text-align="center" src="assets/mvp_winners.png" alt="NBA">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_height.html">
+                                <img width="250px" height="150px" src="assets/mvp_height.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-100 d-none d-md-block"></div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_stats.html">
+                                <img width="250px" height="150px" src="assets/mvp_stats.png">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_3pt.html">
+                                <img width="250px" height="150px" src="assets/mvp_3.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container" text-align="center">
+                &copy; Copyright Jordan Casel 2018
+            </div>
+        </footer>
+</body>

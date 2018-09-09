@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Project</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <div class="navbar">
+
+        <a class="nav-link" href="index.html">Home</a>
+
+        <a class="nav-link" href="comparisons.html">Comparisons</a>
+
+        <a class="nav-link" href="data.html">Data</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Plots &#x25BC;
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mvp_wins.html">MVP Wins</a>
+                <a href="mvp_height.html">MVP Height</a>
+                <a href="mvp_stats.html">MVP Stats</a>
+                <a href="mvp_3pt.html">MVP 3-PT%</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-6">
+                <h2>
+                    MVP Stats Over Time
+                </h2>
+                <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">Year</th>
+                            <th title="Field #2">PTS</th>
+                            <th title="Field #3">TRB</th>
+                            <th title="Field #4">AST</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right">1955</td>
+                            <td align="right">25.7</td>
+                            <td align="right">16.2</td>
+                            <td align="right">2.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1956</td>
+                            <td align="right">20.6</td>
+                            <td align="right">4.8</td>
+                            <td align="right">7.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1957</td>
+                            <td align="right">16.6</td>
+                            <td align="right">22.7</td>
+                            <td align="right">2.9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1958</td>
+                            <td align="right">29.2</td>
+                            <td align="right">16.4</td>
+                            <td align="right">3.1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1959</td>
+                            <td align="right">37.6</td>
+                            <td align="right">27</td>
+                            <td align="right">2.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1960</td>
+                            <td align="right">16.9</td>
+                            <td align="right">23.9</td>
+                            <td align="right">3.4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1961</td>
+                            <td align="right">18.9</td>
+                            <td align="right">23.6</td>
+                            <td align="right">4.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1962</td>
+                            <td align="right">16.8</td>
+                            <td align="right">23.6</td>
+                            <td align="right">4.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1963</td>
+                            <td align="right">31.4</td>
+                            <td align="right">9.9</td>
+                            <td align="right">11</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1964</td>
+                            <td align="right">14.1</td>
+                            <td align="right">24.1</td>
+                            <td align="right">5.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td align="right">33.5</td>
+                            <td align="right">24.6</td>
+                            <td align="right">5.2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1966</td>
+                            <td align="right">24.1</td>
+                            <td align="right">24.2</td>
+                            <td align="right">7.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1967</td>
+                            <td align="right">24.3</td>
+                            <td align="right">23.8</td>
+                            <td align="right">8.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1968</td>
+                            <td align="right">13.8</td>
+                            <td align="right">18.2</td>
+                            <td align="right">2.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1969</td>
+                            <td align="right">21.7</td>
+                            <td align="right">13.9</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1970</td>
+                            <td align="right">31.7</td>
+                            <td align="right">16</td>
+                            <td align="right">3.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1971</td>
+                            <td align="right">34.8</td>
+                            <td align="right">16.6</td>
+                            <td align="right">4.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td align="right">20.5</td>
+                            <td align="right">16.2</td>
+                            <td align="right">4.1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td align="right">27</td>
+                            <td align="right">14.5</td>
+                            <td align="right">4.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td align="right">34.5</td>
+                            <td align="right">14.1</td>
+                            <td align="right">2.2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td align="right">27.7</td>
+                            <td align="right">16.9</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td align="right">26.2</td>
+                            <td align="right">13.3</td>
+                            <td align="right">3.9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td align="right">18.9</td>
+                            <td align="right">13.2</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td align="right">24.8</td>
+                            <td align="right">17.6</td>
+                            <td align="right">1.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td align="right">24.8</td>
+                            <td align="right">10.8</td>
+                            <td align="right">4.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td align="right">24.6</td>
+                            <td align="right">8</td>
+                            <td align="right">4.4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td align="right">31.1</td>
+                            <td align="right">14.7</td>
+                            <td align="right">1.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td align="right">24.5</td>
+                            <td align="right">15.3</td>
+                            <td align="right">1.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td align="right">24.2</td>
+                            <td align="right">10.1</td>
+                            <td align="right">6.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td align="right">28.7</td>
+                            <td align="right">10.5</td>
+                            <td align="right">6.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td align="right">25.8</td>
+                            <td align="right">9.8</td>
+                            <td align="right">6.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td align="right">23.9</td>
+                            <td align="right">6.3</td>
+                            <td align="right">12.2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td align="right">35</td>
+                            <td align="right">5.5</td>
+                            <td align="right">5.9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td align="right">22.5</td>
+                            <td align="right">7.9</td>
+                            <td align="right">12.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td align="right">22.3</td>
+                            <td align="right">6.6</td>
+                            <td align="right">11.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td align="right">31.5</td>
+                            <td align="right">6</td>
+                            <td align="right">5.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td align="right">30.1</td>
+                            <td align="right">6.4</td>
+                            <td align="right">6.1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td align="right">25.6</td>
+                            <td align="right">12.2</td>
+                            <td align="right">5.1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td align="right">27.3</td>
+                            <td align="right">11.9</td>
+                            <td align="right">3.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td align="right">27.6</td>
+                            <td align="right">10.8</td>
+                            <td align="right">2.9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td align="right">30.4</td>
+                            <td align="right">6.6</td>
+                            <td align="right">4.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td align="right">27.4</td>
+                            <td align="right">9.9</td>
+                            <td align="right">4.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td align="right">28.7</td>
+                            <td align="right">5.8</td>
+                            <td align="right">3.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td align="right">23.8</td>
+                            <td align="right">9.4</td>
+                            <td align="right">4.1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td align="right">29.7</td>
+                            <td align="right">13.6</td>
+                            <td align="right">3.8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td align="right">31.1</td>
+                            <td align="right">3.8</td>
+                            <td align="right">4.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td align="right">25.5</td>
+                            <td align="right">12.7</td>
+                            <td align="right">3.7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td align="right">23.3</td>
+                            <td align="right">12.9</td>
+                            <td align="right">3.9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td align="right">24.2</td>
+                            <td align="right">13.9</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td align="right">15.5</td>
+                            <td align="right">3.3</td>
+                            <td align="right">11.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td align="right">18.8</td>
+                            <td align="right">4.2</td>
+                            <td align="right">10.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td align="right">24.6</td>
+                            <td align="right">8.9</td>
+                            <td align="right">3.4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td align="right">28.3</td>
+                            <td align="right">6.3</td>
+                            <td align="right">5.4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td align="right">28.4</td>
+                            <td align="right">7.6</td>
+                            <td align="right">7.2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td align="right">29.7</td>
+                            <td align="right">7.3</td>
+                            <td align="right">8.6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td align="right">25</td>
+                            <td align="right">4.1</td>
+                            <td align="right">7.7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td align="right">27.1</td>
+                            <td align="right">7.9</td>
+                            <td align="right">6.2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td align="right">26.8</td>
+                            <td align="right">8</td>
+                            <td align="right">7.3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td align="right">32</td>
+                            <td align="right">7.4</td>
+                            <td align="right">5.5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td align="right">23.8</td>
+                            <td align="right">4.3</td>
+                            <td align="right">7.7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td align="right">30.1</td>
+                            <td align="right">5.4</td>
+                            <td align="right">6.7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td align="right">31.6</td>
+                            <td align="right">10.7</td>
+                            <td align="right">10.4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td align="right">30.4</td>
+                            <td align="right">5.4</td>
+                            <td align="right">8.8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-6 col-sm-6">
+                <h2>
+                    Historical MVP Height by Position
+                </h2>
+                <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">Season</th>
+                            <th title="Field #2">Pos</th>
+                            <th title="Field #3">Height (in)</th>
+                            <th title="Field #4">YOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right">1955</td>
+                            <td>FC</td>
+                            <td align="right">81</td>
+                            <td align="right">1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1956</td>
+                            <td>PG</td>
+                            <td align="right">73</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1957</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1958</td>
+                            <td>FC</td>
+                            <td align="right">81</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1959</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">0</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1960</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1961</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1962</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1963</td>
+                            <td>G</td>
+                            <td align="right">77</td>
+                            <td align="right">3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1964</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1965</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1966</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1967</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1968</td>
+                            <td>FC</td>
+                            <td align="right">79</td>
+                            <td align="right">0</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1969</td>
+                            <td>FC</td>
+                            <td align="right">81</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1970</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">1</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1971</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1972</td>
+                            <td>FC</td>
+                            <td align="right">81</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1973</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1974</td>
+                            <td>FC</td>
+                            <td align="right">81</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1975</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1976</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1977</td>
+                            <td>C</td>
+                            <td align="right">83</td>
+                            <td align="right">3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1978</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1979</td>
+                            <td>C</td>
+                            <td align="right">86</td>
+                            <td align="right">10</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1980</td>
+                            <td>SF</td>
+                            <td align="right">78</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1981</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1982</td>
+                            <td>C</td>
+                            <td align="right">82</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1983</td>
+                            <td>SF</td>
+                            <td align="right">81</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1984</td>
+                            <td>SF</td>
+                            <td align="right">81</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1985</td>
+                            <td>SF</td>
+                            <td align="right">81</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1986</td>
+                            <td>PG</td>
+                            <td align="right">81</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1987</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">3</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1988</td>
+                            <td>PG</td>
+                            <td align="right">81</td>
+                            <td align="right">9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1989</td>
+                            <td>PG</td>
+                            <td align="right">81</td>
+                            <td align="right">10</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1990</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1991</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1992</td>
+                            <td>PF</td>
+                            <td align="right">78</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1993</td>
+                            <td>C</td>
+                            <td align="right">84</td>
+                            <td align="right">9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1994</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1995</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">10</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1996</td>
+                            <td>PF</td>
+                            <td align="right">81</td>
+                            <td align="right">11</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1997</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">12</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1998</td>
+                            <td>PF</td>
+                            <td align="right">81</td>
+                            <td align="right">13</td>
+                        </tr>
+                        <tr>
+                            <td align="right">1999</td>
+                            <td>C</td>
+                            <td align="right">85</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2000</td>
+                            <td>G</td>
+                            <td align="right">72</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2001</td>
+                            <td>FC</td>
+                            <td align="right">83</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2002</td>
+                            <td>FC</td>
+                            <td align="right">83</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2003</td>
+                            <td>PF</td>
+                            <td align="right">83</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2004</td>
+                            <td>G</td>
+                            <td align="right">75</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2005</td>
+                            <td>G</td>
+                            <td align="right">75</td>
+                            <td align="right">9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2006</td>
+                            <td>PF</td>
+                            <td align="right">84</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2007</td>
+                            <td>SG</td>
+                            <td align="right">78</td>
+                            <td align="right">11</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2008</td>
+                            <td>F</td>
+                            <td align="right">80</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2009</td>
+                            <td>F</td>
+                            <td align="right">80</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2010</td>
+                            <td>PG</td>
+                            <td align="right">75</td>
+                            <td align="right">2</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2011</td>
+                            <td>F</td>
+                            <td align="right">80</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2012</td>
+                            <td>F</td>
+                            <td align="right">80</td>
+                            <td align="right">9</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2013</td>
+                            <td>SF</td>
+                            <td align="right">81</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2014</td>
+                            <td>G</td>
+                            <td align="right">75</td>
+                            <td align="right">5</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2015</td>
+                            <td>G</td>
+                            <td align="right">75</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2016</td>
+                            <td>G</td>
+                            <td align="right">75</td>
+                            <td align="right">8</td>
+                        </tr>
+                        <tr>
+                            <td align="right">2017</td>
+                            <td>SG</td>
+                            <td align="right">77</td>
+                            <td align="right">8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6 col-sm-6">
+                <a class="nav-link" href="https://basketball.realgm.com/nba/awards/by-type"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

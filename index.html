@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Project</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <div class="navbar">
+
+        <a class="nav-link" href="index.html">Home</a>
+
+        <a class="nav-link" href="comparisons.html">Comparisons</a>
+
+        <a class="nav-link" href="data.html">Data</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Plots &#x25BC;
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mvp_wins.html">MVP Wins</a>
+                <a href="mvp_height.html">MVP Height</a>
+                <a href="mvp_stats.html">MVP Stats</a>
+                <a href="mvp_3pt.html">MVP 3-PT%</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="summaryPageContainer" class="media">
+                    <img class="align-self-center mr-3" src="http://blamsports.com/wp-content/uploads/2016/11/18134242/NBA-vector-logos.jpg" width="750px" height="200px" alt="Image from Blamsports.com">
+                    <div class="media-body">
+                        <h3 class="mt-0">NBA Evolution - Visualized</h3>
+                        <p>
+                            How has the impact of player heights/body measurements, positional changes, and rule changes affected the eventual MVP winner
+                            of any given NBA season? This was the research question asked prior to obtaining the data, cleaning
+                            it, and creating visualizations of the results.
+                        </p>
+                        <p>
+                            The data was sourced from
+                            <a href="https://www.basketball-reference.com/">Basketball-Reference</a>
+                            and
+                            <a href="https://basketball.realgm.com/">Basketball Real GM</a>
+                            using Python web-scraping
+                            tool for reading an html file using the following code: pd.read_html. The data was then converted
+                            into a readable CSV file using: pd.read_csv.
+                        </p>
+                        <p>
+                            The data visualizations and descriptions can be viewed on the Comparisons page, individual Plot pages, and the raw data can be viewed on the Data page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_wins.html">
+                                <img width="350px" height="225px" text-align="center" src="assets/mvp_winners.png" alt="NBA">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_height.html">
+                                <img width="350px" height="225px" src="assets/mvp_height.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-100 d-none d-md-block"></div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_stats.html">
+                                <img width="350px" height="225px" src="assets/mvp_stats.png">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_3pt.html">
+                                <img width="350px" height="225px" src="assets/mvp_3.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container" text-align="center">
+                &copy; Copyright Jordan Casel 2018
+            </div>
+        </footer>
+</body>

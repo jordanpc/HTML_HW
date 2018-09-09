@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Project</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <div class="navbar">
+
+        <a class="nav-link" href="index.html">Home</a>
+
+        <a class="nav-link" href="comparisons.html">Comparisons</a>
+
+        <a class="nav-link" href="data.html">Data</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Plots &#x25BC;
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mvp_wins.html">MVP Wins</a>
+                <a href="mvp_height.html">MVP Height</a>
+                <a href="mvp_stats.html">MVP Stats</a>
+                <a href="mvp_3pt.html">MVP 3-PT%</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="summaryPageContainer" class="media">
+                    <img class="align-self-center mr-3" src="assets/mvp_stats.png" width="760px" height="500px" alt="Main Page Placeholder Image">
+                    <div class="media-body">
+                        <h3 class="mt-0">MVP Statistics by Year: PPG, RPG, APG</h3>
+                        <p>
+                            The chart above displays three different line graphs: points per game, rebounds per game, and assists per game. The legend in the upper-right corner explains this.
+                        </p>
+                        <p>
+                            Points per game and assists per game have remained relatively stable in terms of trend lines throughout the history of the NBA. There are fluctuations year-over-year, here does not appear to be a significant trend in either direction. However, rebounds per game by the eventual MVP winner have significantly decreased on a year-over-year basis.
+                        </p>
+                        <p>
+                            The decline in rebounds per game could be attributed to many factors. A few such factors include, faster style of gameplay with less emphasis on rebounding, a focus on playing "small-ball" and from the perimeter, greater competition, and more NBA teams to name a few. No one factor can be attributed to the decline in rebounds per game by the MVP. Additional analysis would need to be performed to make a conclusion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_wins.html">
+                                <img width="250px" height="150px" text-align="center" src="assets/mvp_winners.png" alt="NBA">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_height.html">
+                                <img width="250px" height="150px" src="assets/mvp_height.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-100 d-none d-md-block"></div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_stats.html">
+                                <img width="250px" height="150px" src="assets/mvp_stats.png">
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                            <a href="mvp_3pt.html">
+                                <img width="250px" height="150px" src="assets/mvp_3.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container" text-align="center">
+                &copy; Copyright Jordan Casel 2018
+            </div>
+        </footer>
+</body>
